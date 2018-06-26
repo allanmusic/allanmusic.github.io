@@ -39,7 +39,7 @@ $("input[type=text]").on("keypress",function(e){
   let password = $(this).val();
 
   if(e.which===13){
-    console.log($(this).val());
+    
    
     if( password !== "allan"){
       $("#purchaseWrong").show();

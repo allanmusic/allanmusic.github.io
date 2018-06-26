@@ -27,11 +27,11 @@
 
 })(jQuery); // End of use strict
 
-console.log("started");
+
 
 $("#button1").on("click",function(){
   $("#form").show();
-  console.log("button clicked");
+  
 });
 
 $("input[type=text]").on("keypress",function(e){
@@ -53,5 +53,4 @@ $("input[type=text]").on("keypress",function(e){
     }
   }
   
-  console.log(e.which);
 });

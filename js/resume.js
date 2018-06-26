@@ -43,6 +43,7 @@ $("input[type=text]").on("keypress",function(e){
    
     if( password !== "allan"){
       $("#purchaseWrong").show();
+      $("#purchase").hide();
       $(this).val("");
     }
     else{

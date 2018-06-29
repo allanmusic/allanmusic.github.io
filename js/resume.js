@@ -38,10 +38,12 @@ $("input[type=text]").on("keypress",function(e){
 
   let password = $(this).val();
 
-  if(e.which===13){
+ if(e.which===13){
+    console.log($(this).val());
     
-   
-    if( password !== "allan"){
+    let array = ["allan","nelson","adolfo","nela","miguel","josue","nadia","paz","valeria"];
+
+    if( array.indexOf(password) === -1){
       $("#purchaseWrong").show();
       $("#purchase").hide();
       $(this).val("");

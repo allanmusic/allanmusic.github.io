@@ -38,12 +38,9 @@ $("input[type=text]").on("keypress",function(e){
 
   let password = $(this).val();
 
- if(e.which===13){
-    console.log($(this).val());
-    
-    let array = ["allan","nelson","adolfo","nela","miguel","josue","nadia","paz","valeria"];
-
-    if( array.indexOf(password) === -1){
+  if(e.which===13){
+   
+    if( password !== "CRSRBU"){
       $("#purchaseWrong").show();
       $("#purchase").hide();
       $(this).val("");
@@ -54,5 +51,4 @@ $("input[type=text]").on("keypress",function(e){
       $(this).val("");
     }
   }
-  
 });
